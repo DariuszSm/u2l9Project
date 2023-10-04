@@ -1,0 +1,51 @@
+LinearExpression class
+
+INPUT VARIABLES
+
+The raw x and y coordinates for point one as (x, y) for both coordinates as a string formatted like "(x, y)"
+
+The custom x value as an int to put through the calculated equation
+
+PROCESSED VARIABLES
+
+The extracted x and y coordinates from the inputted coordinate strings
+
+A double slope calculated with (y2-y1)/(x2-x1)
+
+The y intercept as a double calculated with y1-(x1*slope)
+
+The equation as a String representing the raw equation with the Processed variables substituting m and b
+
+A double for the distance between the two points
+
+The solved coordinate point for a given x represented as a two double variables
+
+METHODS
+
+parseCoordValues: Takes in two strings, void return, that are supposed to be the coordinates for 2 points formatted as (x, y), and assigns the coordinate variables to the processed coordinate values in the class
+
+Individual methods that take in and return void, that also manipulate the distance, slope, y intercept and equation variables with the x and y values given initially
+
+CONSTRUCTOR: TAKES IN THE STRINGS FOR THE FIRST 2 COORDINATES
+Calls parseCoordValues
+Calls individual methods for each other variable aside from the solved coord point
+Order for doing so is
+slope
+y intercept
+equation
+distance
+
+solveForGivenX: Returns a string formatted (newX, newY), Takes in the custom X int and uses the linear equation formula with the other variables in the class
+
+toString: returns a string with Concatenated string labeling all of the output variables like slope, and connecting each individual line of labels and variables with a line break
+
+MAIN DESIGN:
+Create a scanner object after importing it outside of main
+Prompt user for first coord, read it with scanner and store in a variable
+repeat for second variable
+create a new LinearEquation object, pass the two coords as params for constructor
+print the object, resulting the linear equation info getting printed out
+prompt user for a custom x
+print the return of function solveForGivenX
+
+done!
