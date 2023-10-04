@@ -10,15 +10,13 @@ PROCESSED VARIABLES
 
 The extracted x and y coordinates from the inputted coordinate strings
 
-A double slope calculated with (y2-y1)/(x2-x1)
+A double slope calculated with slope formula (y2-y1)/(x2-x1)
 
 The y intercept as a double calculated with y1-(x1*slope)
 
 The equation as a String representing the raw equation with the Processed variables substituting m and b
 
 A double for the distance between the two points
-
-The solved coordinate point for a given x represented as a two double variables
 
 METHODS
 
@@ -39,13 +37,17 @@ solveForGivenX: Returns a string formatted (newX, newY), Takes in the custom X i
 
 toString: returns a string with Concatenated string labeling all of the output variables like slope, and connecting each individual line of labels and variables with a line break
 
-MAIN DESIGN:
+MAIN METHOD DESIGN:
+
 Create a scanner object after importing it outside of main
 Prompt user for first coord, read it with scanner and store in a variable
 repeat for second variable
 create a new LinearEquation object, pass the two coords as params for constructor
 print the object, resulting the linear equation info getting printed out
-prompt user for a custom x
-print the return of function solveForGivenX
+
+in a while loop:
+    prompt user for a custom x, collect x with scanner
+    print the return of function solveForGivenX
+end of while loop
 
 done!
