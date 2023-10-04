@@ -35,8 +35,8 @@ public class LinearEquation {
         );
     }
 
-    public String solveForCustomX(int customX) {
-        return "(" + (double)customX + "," + ((double)customX * slope + yIntercept) + ")";
+    public String solveForCustomX(double customX) {
+        return "(" + (double)customX + "," + (customX * slope + yIntercept) + ")";
     }
 
     public LinearEquation(String rawCoord1, String rawCoord2) {

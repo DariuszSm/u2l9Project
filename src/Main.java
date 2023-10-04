@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         String firstCoordRaw;
         String secondCoordRaw;
-        int customX;
+        double customX;
 
         Scanner s = new Scanner(System.in);
 
@@ -17,7 +17,7 @@ public class Main {
 
         while (true) {
             System.out.println("\nEnter a custom X integer for the equation: ");
-            customX = Integer.parseInt(s.nextLine());
+            customX = Double.parseDouble(s.nextLine());
             System.out.println(equation.solveForCustomX(customX));
         }
 
