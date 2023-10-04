@@ -2,7 +2,7 @@ LinearExpression class
 
 INPUT VARIABLES
 
-The raw x and y coordinates for point one as (x, y) for both coordinates as a string formatted like "(x, y)"
+The raw x and y coordinates for point one as (x,y) for both coordinates as a string formatted like "(x,y)"
 
 The custom x value as an int to put through the calculated equation
 
@@ -33,7 +33,7 @@ y intercept
 equation
 distance
 
-solveForGivenX: Returns a string formatted (newX, newY), Takes in the custom X int and uses the linear equation formula with the other variables in the class
+solveForGivenX: Returns a string formatted (newX,newY), Takes in the custom X int and uses the linear equation formula with the other variables in the class
 
 toString: returns a string with Concatenated string labeling all of the output variables like slope, and connecting each individual line of labels and variables with a line break
 
